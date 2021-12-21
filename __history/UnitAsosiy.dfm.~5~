@@ -457,7 +457,6 @@ object FormAsosiy: TFormAsosiy
       Height = 81
       Caption = 'Teatr'
       TabOrder = 0
-      OnClick = Button_TeatrClick
     end
     object Button_Muzey: TButton
       Left = 0
@@ -466,7 +465,6 @@ object FormAsosiy: TFormAsosiy
       Height = 81
       Caption = 'Muzey'
       TabOrder = 1
-      OnClick = Button_MuzeyClick
     end
     object Button_kinoteatr: TButton
       Left = 0
@@ -475,7 +473,6 @@ object FormAsosiy: TFormAsosiy
       Height = 81
       Caption = 'Kino teatr'
       TabOrder = 2
-      OnClick = Button_kinoteatrClick
     end
   end
 end
