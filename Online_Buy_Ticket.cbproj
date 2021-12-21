@@ -127,7 +127,7 @@
             <PCH>true</PCH>
         </PCHCompile>
         <CppCompile Include="Unit2.cpp">
-            <Form>DataModule1</Form>
+            <Form>DataModule2</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
             <DependentOn>Unit2.h</DependentOn>

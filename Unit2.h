@@ -7,7 +7,7 @@
 #include <Data.DB.hpp>
 #include <Data.Win.ADODB.hpp>
 //---------------------------------------------------------------------------
-class TDataModule1 : public TDataModule
+class TDataModule2 : public TDataModule
 {
 __published:	// IDE-managed Components
 	TDataSource *DataSourceTeatr;
@@ -19,9 +19,9 @@ __published:	// IDE-managed Components
 	TADOQuery *ADOQueryMuzey;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TDataModule1(TComponent* Owner);
+	__fastcall TDataModule2(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TDataModule1 *DataModule1;
+extern PACKAGE TDataModule2 *DataModule2;
 //---------------------------------------------------------------------------
 #endif

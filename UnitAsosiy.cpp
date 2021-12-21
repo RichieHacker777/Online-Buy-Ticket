@@ -44,8 +44,8 @@ AnsiString mySQLDateTime(TDateTime sanaTest)
     {
       minute1="0"+IntToStr(minute);
     }
-    else
-    {
+	else
+	{
       minute1=IntToStr(minute);
 	}
 	if(sekund<10)
@@ -59,12 +59,11 @@ AnsiString mySQLDateTime(TDateTime sanaTest)
 	year1=IntToStr(year);
 	Natija=year1+"-"+month1+"-"+date1+" "+hour1+":"+minute1+":"+sekund1;
 	return Natija;
+  }
 //---------------------------------------------------------------------------
-__fastcall TFormAsosiy::TFormAsosiy(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TFormAsosiy::TFormAsosiy(TComponent* Owner): TForm(Owner)
 {
 
-}
 }
 //---------------------------------------------------------------------------
 void __fastcall TFormAsosiy::Button_TeatrClick(TObject *Sender)
@@ -362,6 +361,7 @@ if(Edit1->Text=="")
 	Form3->ShowModal();
 	}
 }
+
 //---------------------------------------------------------------------------
 void __fastcall TFormAsosiy::Button1Click(TObject *Sender)
 {
