@@ -518,3 +518,39 @@ if(ComboBox3->ItemIndex==0)
 
 }
 //---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::Button2Click(TObject *Sender)
+{
+	if(Edit2->Text=="")
+	{
+		ShowMessage("Bolalar sonini kiriting !!!");
+
+	}
+	else
+	{
+		float narxi=StrToFloat(Edit2->Text);
+	float summa=DataModule2->ADOQueryKino_teatr->FieldByName("Chipta_narxi")->AsFloat;
+
+	Form3->Label3->Caption=narxi*summa;
+
+	Form3->ShowModal();
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::DBGrid3DblClick(TObject *Sender)
+{
+	if(Edit2->Text=="")
+	{
+		ShowMessage("Bolalar sonini kiriting !!!");
+
+	}
+	else
+	{
+		float narxi=StrToFloat(Edit2->Text);
+	float summa=DataModule2->ADOQueryKino_teatr->FieldByName("Chipta_narxi")->AsFloat;
+
+	Form3->Label3->Caption=narxi*summa;
+
+	Form3->ShowModal();
+	}
+}
+//---------------------------------------------------------------------------

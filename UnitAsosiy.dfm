@@ -1,7 +1,7 @@
 object FormAsosiy: TFormAsosiy
   Left = 0
   Top = 0
-  Caption = 'FormAsosiy'
+  Caption = 'Asosiy Oyna'
   ClientHeight = 631
   ClientWidth = 1201
   Color = clBtnFace
@@ -19,7 +19,7 @@ object FormAsosiy: TFormAsosiy
     Width = 1001
     Height = 631
     Align = alClient
-    ActiveCard = Kinoteatr
+    ActiveCard = Teatr
     Caption = 'CardPanel1'
     TabOrder = 0
     ExplicitLeft = -98
@@ -42,6 +42,7 @@ object FormAsosiy: TFormAsosiy
         Height = 555
         Align = alClient
         DataSource = DataModule2.DataSourceTeatr
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -164,6 +165,7 @@ object FormAsosiy: TFormAsosiy
         Height = 556
         Align = alClient
         DataSource = DataModule2.DataSourceMuzey
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -276,12 +278,14 @@ object FormAsosiy: TFormAsosiy
         Height = 500
         Align = alClient
         DataSource = DataModule2.DataSourceKino_teatr
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
         TitleFont.Height = -19
         TitleFont.Name = 'Times New Roman'
         TitleFont.Style = []
+        OnDblClick = DBGrid3DblClick
         Columns = <
           item
             Alignment = taCenter
@@ -404,6 +408,7 @@ object FormAsosiy: TFormAsosiy
           Height = 36
           Caption = 'OK'
           TabOrder = 3
+          OnClick = Button2Click
         end
         object Button4: TButton
           Left = 216

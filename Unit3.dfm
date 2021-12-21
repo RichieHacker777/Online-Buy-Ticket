@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form3'
+  Caption = 'Pul o'#39'tkazish'
   ClientHeight = 300
   ClientWidth = 434
   Color = clBtnFace
@@ -10,6 +10,7 @@ object Form3: TForm3
   Font.Height = -24
   Font.Name = 'Times New Roman'
   Font.Style = []
+  Position = poDesktopCenter
   OnClose = FormClose
   OnShow = FormShow
   PixelsPerInch = 96
