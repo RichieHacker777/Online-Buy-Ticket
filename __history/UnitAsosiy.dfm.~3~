@@ -16,10 +16,12 @@ object FormAsosiy: TFormAsosiy
   object SplitView1: TSplitView
     Left = 0
     Top = 0
-    Width = 249
+    Width = 200
     Height = 631
     OpenedWidth = 200
     Placement = svpLeft
     TabOrder = 0
+    ExplicitLeft = 328
+    ExplicitTop = 56
   end
 end

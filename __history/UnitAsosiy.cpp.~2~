@@ -14,3 +14,8 @@ __fastcall TFormAsosiy::TFormAsosiy(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::Button1Click(TObject *Sender)
+{
+    ShowMessage("Infinity Team Official");
+}
+//---------------------------------------------------------------------------
