@@ -406,3 +406,10 @@ if(DataModule2->ADOQueryKino_teatr->RecordCount==0)
 }
 }
 //---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::Button5Click(TObject *Sender)
+{
+DataModule2->ADOQueryKino_teatr->Close();
+DataModule2->ADOQueryKino_teatr->SQL->Text="select * from Kino_teatr";
+DataModule2->ADOQueryKino_teatr->Open();
+}
+//---------------------------------------------------------------------------

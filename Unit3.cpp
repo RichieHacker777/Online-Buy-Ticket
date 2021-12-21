@@ -18,9 +18,7 @@ __fastcall TForm3::TForm3(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm3::Button1Click(TObject *Sender)
 {
-	ShowMessage("Siz "+ Label4->Caption + " ga "
-			+ Summa->Text +
-			"mablag otkazdingiz");
+	ShowMessage("To'landi");
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm3::FormShow(TObject *Sender)

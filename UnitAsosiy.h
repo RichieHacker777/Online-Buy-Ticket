@@ -60,6 +60,7 @@ __published:	// IDE-managed Components
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall ComboBox2Select(TObject *Sender);
 	void __fastcall Button4Click(TObject *Sender);
+	void __fastcall Button5Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormAsosiy(TComponent* Owner);

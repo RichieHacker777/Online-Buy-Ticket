@@ -19,7 +19,7 @@ object FormAsosiy: TFormAsosiy
     Width = 1001
     Height = 631
     Align = alClient
-    ActiveCard = Kinoteatr
+    ActiveCard = Teatr
     Caption = 'CardPanel1'
     TabOrder = 0
     ExplicitLeft = -98
@@ -41,6 +41,7 @@ object FormAsosiy: TFormAsosiy
         Width = 999
         Height = 555
         Align = alClient
+        DataSource = DataModule2.DataSourceTeatr
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -162,6 +163,7 @@ object FormAsosiy: TFormAsosiy
         Width = 999
         Height = 556
         Align = alClient
+        DataSource = DataModule2.DataSourceMuzey
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -273,6 +275,7 @@ object FormAsosiy: TFormAsosiy
         Width = 999
         Height = 500
         Align = alClient
+        DataSource = DataModule2.DataSourceKino_teatr
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -420,6 +423,7 @@ object FormAsosiy: TFormAsosiy
           Height = 36
           Caption = 'Hammasi'
           TabOrder = 5
+          OnClick = Button5Click
         end
         object DatePicker1: TDatePicker
           Left = 5
