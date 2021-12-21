@@ -23,4 +23,13 @@ object FormAsosiy: TFormAsosiy
     ExplicitLeft = 328
     ExplicitTop = 56
   end
+  object Button1: TButton
+    Left = 352
+    Top = 320
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
 end
