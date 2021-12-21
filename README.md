@@ -1,2 +1,2 @@
 # Online Buy Ticket
-# Madaniyat markazlariga onlayn chipta xarid qilish
+ Madaniyat markazlariga onlayn chipta xarid qilish
