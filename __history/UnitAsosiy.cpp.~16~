@@ -1,10 +1,12 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #include <vcl.h>
 #include <DateUtils.hpp>
 #pragma hdrstop
 
 #include "UnitAsosiy.h"
+#include "Unit2.h"
+#include "Unit3.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -42,8 +44,8 @@ AnsiString mySQLDateTime(TDateTime sanaTest)
     {
       minute1="0"+IntToStr(minute);
     }
-    else
-    {
+	else
+	{
       minute1=IntToStr(minute);
 	}
 	if(sekund<10)
@@ -57,12 +59,11 @@ AnsiString mySQLDateTime(TDateTime sanaTest)
 	year1=IntToStr(year);
 	Natija=year1+"-"+month1+"-"+date1+" "+hour1+":"+minute1+":"+sekund1;
 	return Natija;
+  }
 //---------------------------------------------------------------------------
-__fastcall TFormAsosiy::TFormAsosiy(TComponent* Owner)
-	: TForm(Owner)
+__fastcall TFormAsosiy::TFormAsosiy(TComponent* Owner): TForm(Owner)
 {
 
-}
 }
 //---------------------------------------------------------------------------
 void __fastcall TFormAsosiy::Button_TeatrClick(TObject *Sender)
@@ -90,7 +91,7 @@ void __fastcall TFormAsosiy::Teatr_Viloyat_comboboxSelect(TObject *Sender)
 	   Teatr_Teatr->Items->Add("Yoshlar teatri");
 	   Teatr_Teatr->Items->Add("Abbos Bakirov nomidagi teatr");
 	   Teatr_Teatr->Items->Add("Z.M.Bobur nomidagi dramma teatri");
-//	   "???????? ??????"
+//	   "Когирчок Театри"
 //	   "yoshlar teatri"
 //	   "Abbos Bakirov nomidagi teatr"
 //	   "Z.M.BOBUR nomidagi DRAMA TEATRI""");
@@ -103,7 +104,7 @@ void __fastcall TFormAsosiy::Teatr_Viloyat_comboboxSelect(TObject *Sender)
 	   Teatr_Teatr->Items->Add("Dramma teatri");
 	   Teatr_Teatr->Items->Add("S. Ayniy teatrlari");
 	   //Teatr_Teatr->Items->Add("Z.M.Bobur nomidagi dramma teatri");
-//	   "???????? ??????"
+//	   "Когирчок Театри"
 //	   "yoshlar teatri"
 //	   "Abbos Bakirov nomidagi teatr"
 //	   "Z.M.BOBUR nomidagi DRAMA TEATRI""");
@@ -160,7 +161,7 @@ void __fastcall TFormAsosiy::Teatr_Viloyat_comboboxSelect(TObject *Sender)
 										if(Teatr_Viloyat_combobox->ItemIndex==9)
 	{
 		Teatr_Teatr->Items->Clear();
-		Teatr_Teatr->Items->Add("O.Xo?jayev nomidagi Sirdaryo viloyati musiqali drama teatri");
+		Teatr_Teatr->Items->Add("O.Xoʻjayev nomidagi Sirdaryo viloyati musiqali drama teatri");
 		Teatr_Teatr->Items->Add("Musiqali dramma teatri");
 
 
@@ -168,7 +169,7 @@ void __fastcall TFormAsosiy::Teatr_Viloyat_comboboxSelect(TObject *Sender)
 											if(Teatr_Viloyat_combobox->ItemIndex==10)
 	{
 		Teatr_Teatr->Items->Clear();
-		Teatr_Teatr->Items->Add("M.Uyg?ur nomidagi o?zbek davlat musiqali drama teatri");
+		Teatr_Teatr->Items->Add("M.Uygʻur nomidagi oʻzbek davlat musiqali drama teatri");
 		Teatr_Teatr->Items->Add("Musiqali dramma teatri");
 
 
@@ -180,15 +181,15 @@ void __fastcall TFormAsosiy::Teatr_Viloyat_comboboxSelect(TObject *Sender)
 		Teatr_Teatr->Items->Add("Bolalar teatri");
 		Teatr_Teatr->Items->Add("Rus drama teatri");
 		Teatr_Teatr->Items->Add("Musiqali dramma teatri");
-			Teatr_Teatr->Items->Add("O�ZBEKISTON DAVLAT MUSIQALI KOMEDIYA TEATRI");
-		Teatr_Teatr->Items->Add("O�ZBEK MILLIY AKADEMIK DRAMA TEATRI");
+			Teatr_Teatr->Items->Add("O‘ZBEKISTON DAVLAT MUSIQALI KOMEDIYA TEATRI");
+		Teatr_Teatr->Items->Add("O‘ZBEK MILLIY AKADEMIK DRAMA TEATRI");
 			Teatr_Teatr->Items->Add("HOLOGRAM WORLD nomidagi GOLOGRAFIK TEATRI");
 		Teatr_Teatr->Items->Add("Diydor teatri");
-			Teatr_Teatr->Items->Add("O�ZBEKISTON DAVLAT SATIRA TEATRI");
-		Teatr_Teatr->Items->Add("O�ZBEKISTON RESPUBLIKASI YOSHLAR TEATRI");
+			Teatr_Teatr->Items->Add("O‘ZBEKISTON DAVLAT SATIRA TEATRI");
+		Teatr_Teatr->Items->Add("O‘ZBEKISTON RESPUBLIKASI YOSHLAR TEATRI");
 			Teatr_Teatr->Items->Add("YULDOSH OXUNBOBOYEV nomidagi RESPUBLIKA YOSH TOMOSHABIRLAR TEATRI");
-		Teatr_Teatr->Items->Add("O�ZBEK DAVLAT DRAMMA TEATRI");
-			Teatr_Teatr->Items->Add("MUKIMI nomidagi O�ZBEK DAVLAT MUSIQA TEATRI");
+		Teatr_Teatr->Items->Add("O‘ZBEK DAVLAT DRAMMA TEATRI");
+			Teatr_Teatr->Items->Add("MUKIMI nomidagi O‘ZBEK DAVLAT MUSIQA TEATRI");
 		Teatr_Teatr->Items->Add("O`zbek milliy qo`g`irchoq teatri");
 
 	}
@@ -316,7 +317,7 @@ if(ComboBox1->ItemIndex==0)
 	if(Teatr_Viloyat_combobox->ItemIndex==10)
 	{
 		Teatr_Teatr->Items->Clear();
-		Teatr_Teatr->Items->Add("M.Uyg?ur nomidagi o`zbek davlat muzeyi");
+		Teatr_Teatr->Items->Add("M.Uygʻur nomidagi o`zbek davlat muzeyi");
 //		Teatr_Teatr->Items->Add("Musiqali dramma teatri");
 //
 //
@@ -332,11 +333,11 @@ if(ComboBox1->ItemIndex==0)
 		Teatr_Teatr->Items->Add("O`ZBEK MILLIY AKADEMIK DRAMA TEATRI");
 //			Teatr_Teatr->Items->Add("HOLOGRAM WORLD nomidagi GOLOGRAFIK TEATRI");
 //		Teatr_Teatr->Items->Add("Diydor teatri");
-//			Teatr_Teatr->Items->Add("O�ZBEKISTON DAVLAT SATIRA TEATRI");
-//		Teatr_Teatr->Items->Add("O�ZBEKISTON RESPUBLIKASI YOSHLAR TEATRI");
+//			Teatr_Teatr->Items->Add("O‘ZBEKISTON DAVLAT SATIRA TEATRI");
+//		Teatr_Teatr->Items->Add("O‘ZBEKISTON RESPUBLIKASI YOSHLAR TEATRI");
 //			Teatr_Teatr->Items->Add("YULDOSH OXUNBOBOYEV nomidagi RESPUBLIKA YOSH TOMOSHABIRLAR TEATRI");
-//		Teatr_Teatr->Items->Add("O�ZBEK DAVLAT DRAMMA TEATRI");
-//			Teatr_Teatr->Items->Add("MUKIMI nomidagi O�ZBEK DAVLAT MUSIQA TEATRI");
+//		Teatr_Teatr->Items->Add("O‘ZBEK DAVLAT DRAMMA TEATRI");
+//			Teatr_Teatr->Items->Add("MUKIMI nomidagi O‘ZBEK DAVLAT MUSIQA TEATRI");
 //		Teatr_Teatr->Items->Add("O`zbek milliy qo`g`irchoq teatri");
 
 	}
@@ -360,6 +361,7 @@ if(Edit1->Text=="")
 	Form3->ShowModal();
 	}
 }
+
 //---------------------------------------------------------------------------
 void __fastcall TFormAsosiy::Button1Click(TObject *Sender)
 {
@@ -377,5 +379,37 @@ if(Edit1->Text=="")
 
 	Form3->ShowModal();
 	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::ComboBox2Select(TObject *Sender)
+{
+	DataModule2->ADOQueryMuzey->Close();
+	DataModule2->ADOQueryMuzey->SQL->Text=" select * from Muzey where muzey_nomi like '"+ComboBox2->Text+"' ";
+	DataModule2->ADOQueryMuzey->Open();
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::Button4Click(TObject *Sender)
+{
+TDateTime sanaTest1=DatePicker1->Date;
+TDateTime sanaTest2=DatePicker2->Date;
+
+String sana1=mySQLDateTime(sanaTest1);
+String sana2=mySQLDateTime(sanaTest2);
+
+DataModule2->ADOQueryKino_teatr->Close();
+DataModule2->ADOQueryKino_teatr->SQL->Text="select * from Kino_teatr where kuni>='"+sana1+"' and kuni<='"+sana2+"' ";
+DataModule2->ADOQueryKino_teatr->Open();
+
+if(DataModule2->ADOQueryKino_teatr->RecordCount==0)
+{
+  ShowMessage("Bu sanada kino topilmadi !!!");
+}
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormAsosiy::Button5Click(TObject *Sender)
+{
+DataModule2->ADOQueryKino_teatr->Close();
+DataModule2->ADOQueryKino_teatr->SQL->Text="select * from Kino_teatr";
+DataModule2->ADOQueryKino_teatr->Open();
 }
 //---------------------------------------------------------------------------

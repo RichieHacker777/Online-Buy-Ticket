@@ -19,7 +19,7 @@ object FormAsosiy: TFormAsosiy
     Width = 1001
     Height = 631
     Align = alClient
-    ActiveCard = Kinoteatr
+    ActiveCard = Teatr
     Caption = 'CardPanel1'
     TabOrder = 0
     ExplicitLeft = -98
@@ -367,7 +367,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 0
           Text = 'Tanlang'
-          OnSelect = ComboBox3Select
           Items.Strings = (
             'Andijon viloyati'
             'Buxoro viloyati'

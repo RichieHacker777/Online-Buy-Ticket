@@ -367,7 +367,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 0
           Text = 'Tanlang'
-          OnSelect = ComboBox3Select
           Items.Strings = (
             'Andijon viloyati'
             'Buxoro viloyati'
