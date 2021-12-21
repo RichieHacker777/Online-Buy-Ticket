@@ -3,7 +3,7 @@ object FormAsosiy: TFormAsosiy
   Top = 0
   Caption = 'FormAsosiy'
   ClientHeight = 631
-  ClientWidth = 1201
+  ClientWidth = 1039
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,7 +16,7 @@ object FormAsosiy: TFormAsosiy
   object CardPanel1: TCardPanel
     Left = 200
     Top = 0
-    Width = 1001
+    Width = 839
     Height = 631
     Align = alClient
     ActiveCard = Kinoteatr
@@ -28,7 +28,7 @@ object FormAsosiy: TFormAsosiy
     object Teatr: TCard
       Left = 1
       Top = 1
-      Width = 999
+      Width = 837
       Height = 629
       Caption = 'Teatr'
       CardIndex = 0
@@ -38,7 +38,7 @@ object FormAsosiy: TFormAsosiy
       object DBGrid1: TDBGrid
         Left = 0
         Top = 74
-        Width = 999
+        Width = 837
         Height = 555
         Align = alClient
         TabOrder = 0
@@ -47,7 +47,6 @@ object FormAsosiy: TFormAsosiy
         TitleFont.Height = -19
         TitleFont.Name = 'Times New Roman'
         TitleFont.Style = []
-        OnDblClick = DBGrid1DblClick
         Columns = <
           item
             Alignment = taCenter
@@ -92,7 +91,7 @@ object FormAsosiy: TFormAsosiy
       object Panel1: TPanel
         Left = 0
         Top = 0
-        Width = 999
+        Width = 837
         Height = 74
         Align = alTop
         TabOrder = 1
@@ -104,7 +103,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 0
           Text = 'Tanlang'
-          OnSelect = Teatr_Viloyat_comboboxSelect
           Items.Strings = (
             'Andijon viloyati'
             'Buxoro viloyati'
@@ -126,7 +124,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 1
           Text = 'Tanlang'
-          OnClick = Teatr_TeatrClick
         end
         object Edit3: TEdit
           Left = 705
@@ -142,14 +139,13 @@ object FormAsosiy: TFormAsosiy
           Height = 31
           Caption = 'OK'
           TabOrder = 3
-          OnClick = Button3Click
         end
       end
     end
     object Muzey: TCard
       Left = 1
       Top = 1
-      Width = 999
+      Width = 837
       Height = 629
       Caption = 'Muzey'
       CardIndex = 1
@@ -159,7 +155,7 @@ object FormAsosiy: TFormAsosiy
       object DBGrid2: TDBGrid
         Left = 0
         Top = 73
-        Width = 999
+        Width = 837
         Height = 556
         Align = alClient
         TabOrder = 0
@@ -168,7 +164,6 @@ object FormAsosiy: TFormAsosiy
         TitleFont.Height = -19
         TitleFont.Name = 'Times New Roman'
         TitleFont.Style = []
-        OnDblClick = DBGrid2DblClick
         Columns = <
           item
             Expanded = False
@@ -203,7 +198,7 @@ object FormAsosiy: TFormAsosiy
       object Panel2: TPanel
         Left = 0
         Top = 0
-        Width = 999
+        Width = 837
         Height = 73
         Align = alTop
         TabOrder = 1
@@ -215,7 +210,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 0
           Text = 'ComboBox1'
-          OnSelect = ComboBox1Select
           Items.Strings = (
             'Andijon viloyati'
             'Buxoro viloyati'
@@ -237,7 +231,6 @@ object FormAsosiy: TFormAsosiy
           Height = 29
           TabOrder = 1
           Text = 'ComboBox2'
-          OnSelect = ComboBox2Select
         end
         object Edit1: TEdit
           Left = 792
@@ -253,14 +246,13 @@ object FormAsosiy: TFormAsosiy
           Height = 31
           Caption = 'OK'
           TabOrder = 3
-          OnClick = Button1Click
         end
       end
     end
     object Kinoteatr: TCard
       Left = 1
       Top = 1
-      Width = 999
+      Width = 837
       Height = 629
       Caption = 'Kinoteatr'
       CardIndex = 2
@@ -270,7 +262,7 @@ object FormAsosiy: TFormAsosiy
       object DBGrid3: TDBGrid
         Left = 0
         Top = 129
-        Width = 999
+        Width = 837
         Height = 500
         Align = alClient
         TabOrder = 0
@@ -350,7 +342,7 @@ object FormAsosiy: TFormAsosiy
       object Panel3: TPanel
         Left = 0
         Top = 0
-        Width = 999
+        Width = 837
         Height = 129
         Align = alTop
         TabOrder = 1
@@ -411,7 +403,6 @@ object FormAsosiy: TFormAsosiy
           ImageAlignment = iaRight
           ImageIndex = 0
           TabOrder = 4
-          OnClick = Button4Click
         end
         object Button5: TButton
           Left = 8
